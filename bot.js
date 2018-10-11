@@ -20,3 +20,14 @@ client.on('ready', () => {
  * the entire script before going online
  */
 client.login('BOT TOKEN');
+/**
+ * listen for new messages
+ */
+client.on('message', message => {
+  /**
+   * basic command condition
+   */
+  if (message.content === 'say hi') {
+    message.reply('hello to you!');
+  }
+});
